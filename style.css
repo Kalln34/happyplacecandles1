@@ -1,0 +1,44 @@
+*{
+    margin: 0px; padding: 0px; border: 0px;
+}
+
+:root {
+    --primary-color: #F7DFC2;
+    --text-style: 'monospace';
+    --text-color: black;
+}
+
+  .navbar-nav .nav-link {
+    font-family:'Atma';
+    font-size: 1rem; 
+    font-weight: bold; 
+    color: #aac24e; 
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+   .navbar-nav .nav-link:hover {
+    color: #fba88a; 
+  }
+
+  .hero-container {
+  position: relative; /* Allows absolute positioning of navbar */
+  width: 100%;
+  overflow: hidden; /* Prevents content overflow */
+}
+
+.hero-banner {
+  /* Style your hero banner here, including background image */
+  height: 200px; /* Example height */
+  background-size: cover;
+  background-position: center;
+  /* Add other styles as needed */
+}
+
+.navbar {
+  position: absolute; /* Or fixed if you want it to stay fixed on scroll */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10; /* Ensure navbar is on top of the hero */
+}
