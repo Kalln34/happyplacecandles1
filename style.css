@@ -29,7 +29,7 @@
 
 .hero-banner {
   /* Style your hero banner here, including background image */
-  height: 200px; /* Example height */
+  height: 100px; /* Example height */
   background-size: cover;
   background-position: center;
   /* Add other styles as needed */
@@ -42,3 +42,71 @@
   width: 100%;
   z-index: 10; /* Ensure navbar is on top of the hero */
 }
+
+.align-center {
+  text-align: center;
+  padding-bottom: 20px;
+  font-family: 'Atma';
+  font-size: 60px;
+}
+
+.product-list {
+  background-color: white;
+  padding: 3em;
+}
+
+.product-list .card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 1em;
+  box-shadow: 0px 10px 5px #b2bec3;
+  text-align: center;
+  font-family: 'Atma';
+}
+
+.card .title {
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 15px;
+}
+
+.card img {
+  max-width: 100%;
+}
+
+.card .text {
+  text-align: left;
+  margin-left: .5em;
+  margin-bottom: 0.5em;
+}
+
+.buy-button {
+  background-color: #aac24e;
+  border: none;
+  padding: .5em;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 12px;
+  color: whitesmoke;
+}
+
+.buy-button:hover {
+  box-shadow: 0px 5px 5px #b2bec3;
+}
+
+.product-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 25px;
+  grid-row-gap: 40px;
+}
+
+ .footer {
+    position: absolute;
+    background-color: #aac24e; 
+    color: #000000; 
+    font-family: 'Bree Serif', serif;
+    font-size: 1rem;
+    padding: 1.5rem 0; 
+    margin-top: 2rem;
+  }
