@@ -28,145 +28,192 @@
 </head>
 
 <body>
-    <div class="hero-container">
-        <div class="hero-banner">
-             <img src="images/HPCbannerpic.png" class="img-fluid w-100" alt="Happy Place Candles Banner" width="1920px" height="480px" style="object-fit: cover; max-height: 400px;" fetchpriority="high" loading="eager" decoding="async">
-        </div>
-    <div class="d-flex flex-column min-vh-100">
-      <nav class="navbar navbar-expand-lg navbar-custom navbar-text">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">
-            <img src="images/HPClogo1.png" alt="Happy Place Candles Logo" width="125px" height="125px" style="height: 125px;"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="shopDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Our Products
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="shopDropdown">
-                  <li><a class="dropdown-item" href="candles.html">Candles</a></li>
-                  <li><hr class="dropdown-divider"></li>
+   <div class="hero-banner position-relative text-center">
+  <img 
+    src="images/HPCbannerpic.png" 
+    class="banner-img img-fluid w-100"
+    alt="Happy Place Candles Banner" 
+    width="1920" 
+    height="250"
+    fetchpriority="high" 
+    loading="eager" 
+    decoding="async"
+  >
+  <div class="hero-text-overlay">
+    <h1>Welcome to Happy Place Candles</h1>
+    <p>Handcrafted with love to brighten your space</p>
+  </div>
+</div>
 
-                  <li><a class="dropdown-item" href="soap-and-room-sprays.html">Soap and Room Sprays</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="https://www.etsy.com/shop/happyplacecandlesct/?etsrc=sdt" target="_blank">Shop our Etsy store</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about-us.html">About Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="faq.html">FAQ</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-custom navbar-text w-100">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">
+      <img 
+        src="images/HPClogo1.png" 
+        alt="Happy Place Candles Logo" 
+        width="125" 
+        height="125"
+      >
+    </a>
+
+    <button 
+      class="navbar-toggler" 
+      type="button" 
+      data-bs-toggle="collapse" 
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav" 
+      aria-expanded="false" 
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item dropdown">
+          <a 
+            class="nav-link dropdown-toggle" 
+            href="#" 
+            id="shopDropdown" 
+            role="button" 
+            data-bs-toggle="dropdown" 
+            aria-expanded="false"
+          >
+            Our Products
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="shopDropdown">
+            <li><a class="dropdown-item" href="candles.html">Candles</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="soap-and-room-sprays.html">Soap and Room Sprays</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.etsy.com/shop/happyplacecandlesct/?etsrc=sdt" target="_blank">
+            Shop our Etsy store
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="about-us.html">About Us</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="faq.html">FAQ</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
       <main>
-        <section class="page">
-            <div class="main-container">
-                <h1 class="title">FAQ</h1>
-                    <p>You've got questions, we've got answers</p>   
+        <section class="page py-3 text-center">
+            <div class="container">
+                <h1 class="title mb-2">FAQ</h1>
+                    <p class="lead">You've got questions, we've got answers</p>   
             </div>
         </section>
             
-        <section class="FAQ">
-            <div class="accordion" id="accordionExample">
+    <section class="faq-section py-2">
+      <div class="container">
+        <div class="accordion" id="accordionExample">
+            
             <div class="accordion-item">
-                <h2 class="accordion-header">
+            <h2 class="accordion-header">
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    What are your candles made of?
+                What are your candles made of?
                 </button>
-                </h2>
-                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                    <strong>Coconut soy wax.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                </div>
+                <strong>Coconut soy wax.</strong> Our candles are made with natural coconut soy wax for a clean and even burn.
                 </div>
             </div>
+            </div>
+
             <div class="accordion-item">
-                <h2 class="accordion-header">
+            <h2 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    Are your products vegan and cruelty-free?
+                Are your products vegan and cruelty-free?
                 </button>
-                </h2>
-                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                    <strong>Yes!</strong> All of our candles and room sprays are 100% vegan and cruelty-free. We never test on animals.
-                </div>
+                <strong>Yes!</strong> All of our products are vegan, cruelty-free, and never tested on animals.
                 </div>
             </div>
+            </div>
+
             <div class="accordion-item">
-                <h2 class="accordion-header">
+            <h2 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    How long do your candles burn?
+                How long do your candles burn?
                 </button>
-                </h2>
-                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                    <strong>This is the third item’s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    What is the best way to care for my candle?
-                </button>
-                </h2>
-                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                    <strong>This is the second item’s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    Do you offer seasonal or limited-edition scents?
-                </button>
-                </h2>
-                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                    <strong>This is the second item’s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    Do you take custom or bulk orders (e.g. weddings, events)
-                </button>
-                </h2>
-                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                    <strong>This is the second item’s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    Where do you sell your products?
-                </button>
-                </h2>
-                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                    <strong>This is the second item’s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                </div>
+                Our standard-size candles burn for 30–50 hours with proper care.
                 </div>
             </div>
             </div>
 
+            <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                What is the best way to care for my candle?
+                </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                Trim the wick to 1/4" before each use and allow a full melt pool during the first burn.
+                </div>
+            </div>
+            </div>
 
-        </section>
-      </main>    
+            <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                Do you offer seasonal or limited-edition scents?
+                </button>
+            </h2>
+            <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                Yes! We release special scents for holidays and seasons—follow us on social to stay updated.
+                </div>
+            </div>
+            </div>
+
+            <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                Do you take custom or bulk orders (e.g. weddings, events)?
+                </button>
+            </h2>
+            <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                Yes! We offer custom and bulk orders—just reach out to us to discuss options.
+                </div>
+            </div>
+            </div>
+
+            <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                Where do you sell your products?
+                </button>
+            </h2>
+            <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                You can find us online through our website, and occasionally at local artisan markets and pop-ups.
+                </div>
+            </div>
+            </div>
+
+        </div>
+      </div>  
+    </section>
+    </main>    
 
 
 
